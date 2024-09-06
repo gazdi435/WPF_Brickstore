@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="DimGray">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="4*"/>
@@ -26,6 +26,6 @@
             </StackPanel>
             <Button x:Name="betoltesBTN" Content="Fájl betöltése" Width="90" Height="25" Click="betoltesBTN_Click" Margin="20"/>
         </StackPanel>
-        <DataGrid x:Name="mainDG" Grid.Row="1"/>
+        <DataGrid x:Name="mainDG" Grid.Row="1" Background="DimGray"/>
     </Grid>
 </Window>
