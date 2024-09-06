@@ -7,6 +7,25 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+            <StackPanel>
+                <Label Content="Keresés ID alapján" HorizontalAlignment="Center"/>
+                <TextBox Width="150" Height="25" HorizontalAlignment="Center" x:Name="itemIDTXTB" TextChanged="itemIDTXTB_TextChanged" Margin="20"/>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Keresés név alapján" HorizontalAlignment="Center"/>
+                <TextBox Width="150" Height="25" HorizontalAlignment="Right" x:Name="itemNameTXTB" TextChanged="itemIDTXTB_TextChanged" Margin="20"/>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Keresés kategória alapján" HorizontalAlignment="Center"/>
+                <TextBox Width="150" Height="25" HorizontalAlignment="Right" x:Name="itemCategoryTXTB" TextChanged="itemIDTXTB_TextChanged" Margin="20"/>
+            </StackPanel>
+            <Button x:Name="betoltesBTN" Content="Fájl betöltése" Width="90" Height="25" Click="betoltesBTN_Click" Margin="20"/>
+        </StackPanel>
+        <DataGrid x:Name="mainDG" Grid.Row="1"/>
     </Grid>
 </Window>
